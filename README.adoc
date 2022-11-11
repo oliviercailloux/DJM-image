@@ -7,6 +7,12 @@ Can be used to build Java projects using Maven. Has strictly no more features th
 
 Features best practices, in particular, https://hub.docker.com/_/debian[exports LANG=C.UTF-8].
 
+== Release
+* `docker build -t ghcr.io/oliviercailloux/djm:1 -t ghcr.io/oliviercailloux/djm .`
+* `git tag -a v1`
+* `cat my-token | docker login ghcr.io --username oliviercailloux --password-stdin`
+* `docker push ghcr.io/oliviercailloux/djm`
+
 == Related
 https://github.com/search?q=language%3ADockerfile+FROM+debian+slim+openjdk-17&type=Code
 
