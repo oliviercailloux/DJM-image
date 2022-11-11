@@ -1,0 +1,13 @@
+= DJM image
+
+A simple Docker image featuring stable versions of Debian slim, Jdk and Maven.
+
+== Rationale
+Can be used to build Java projects using Maven. Has strictly no more features than necessary, and depends on stable versions, which is good for security and easy maintenance. Based on Debian (just because I like, and am used to, this distribution).
+
+Features best practices, in particular, https://hub.docker.com/_/debian[exports LANG=C.UTF-8].
+
+== Related
+https://github.com/search?q=language%3ADockerfile+FROM+debian+slim+openjdk-17&type=Code
+
+
